@@ -321,6 +321,12 @@ body {
     z-index: 99;
 }
 
+@media (max-width: 900px) {
+    .hover-4:hover .hover-4-title {
+        display: none;
+    }
+}
+
 .hover-4-description {
     position: absolute;
     top: 2rem;
