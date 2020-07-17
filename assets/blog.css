@@ -37,7 +37,6 @@ body {
     height: auto;
     margin-top: 0;
     opacity: 0.9;
-    pointer-events: none;
 }
 
 .fa {
