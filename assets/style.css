@@ -456,7 +456,8 @@ body {
 
 #collapseOne,
 #collapseTwo,
-#collapseThree {
+#collapseThree,
+#collapseFour {
     color: rgb(167, 167, 167);
 }
 
@@ -586,6 +587,9 @@ body {
         font-size: 50%;
     }
 }
+
+
+/* contact section  */
 
 
 /* ///////////footer///////////////// */
