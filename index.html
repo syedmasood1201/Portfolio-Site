@@ -13,10 +13,24 @@
     <script src="https://kit.fontawesome.com/551e46de4a.js" crossorigin="anonymous"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162752815-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162752815-1');
+    </script>
   </head>
     <!-- NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg fixed-top py-3" id="nav-bar">
+        <!-- <div class="cursor"></div> -->
         <div class="container">
           <div class="logo">
             <a href="index.html">
@@ -38,7 +52,10 @@
                 <a href="#skills" class="nav-link text-uppercase font-weight-bold">Skills</a>
               </li>
               <li class="nav-item">
-                <a href="#faq" class="nav-link text-uppercase font-weight-bold">History</a>
+                <a href="#work-heading" class="nav-link text-uppercase font-weight-bold">Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="#research-paper-section" class="nav-link text-uppercase font-weight-bold">Research Papers</a>
               </li>
             </ul>
           </div>
@@ -163,8 +180,78 @@
         </div>
       </div>
     </div>
-    <!-- FOOTER -->
+    <!-- TESTING -->
+    <h1 class="display-4" id="work-heading">Work and Volunteer Experiences</h1>
+    <div class="row">
+      <div class="col-lg-4 mx-auto">
+          <!-- Timeline -->
+          <ul class="timeline">
+              <li class="timeline-item bg-black rounded ml-3 p-4 shadow">
+                  <!-- <div class="timeline-arrow"></div> -->
+                  <h2 class="h5 text-white mb-0">Chief Executive Officer</h2><span class="small text-white">July, 2021</span>
+                  <p class="text-small text-white mt-2 font-weight-light">Starlax Aerospace Private Limited</p>
+              </li>
+              <li class="timeline-item bg-black rounded ml-3 p-4 shadow">
+                <!-- <div class="timeline-arrow"></div> -->
+                <h2 class="h5 text-white mb-0">Co-Founder</h2><span class="small text-white">March, 2021</span>
+                <p class="text-small text-white mt-2 font-weight-light">Co-Founded Starlax Aerospace Private Limited</p>
+            </li>
+            <li class="timeline-item bg-black rounded ml-3 p-4 shadow">
+                <!-- <div class="timeline-arrow"></div> -->
+                <h2 class="h5 text-white mb-0">Web Development Lead</h2><span class="small text-white">July, 2020</span>
+                <p class="text-small text-white mt-2 font-weight-light">The Project Team, SRM IST</p>
+            </li>
+            <li class="timeline-item bg-black rounded ml-3 p-4 shadow">
+              <!-- <div class="timeline-arrow"></div> -->
+              <h2 class="h5 text-white mb-0">Core Technical Memeber</h2><span class="small text-white">February, 2020</span>
+              <p class="text-small text-white mt-2 font-weight-light">The Project Team, SRM IST</p>
+          </li>
+          <li class="timeline-item bg-black rounded ml-3 p-4 shadow">
+            <!-- <div class="timeline-arrow"></div> -->
+            <h2 class="h5 text-white mb-0">Technical Memeber</h2><span class="small text-white">August, 2019</span>
+            <p class="text-small text-white mt-2 font-weight-light">The Project Team, SRM IST</p>
+        </li>
+          </ul><!-- End -->
+      </div>
+  </div>
+  <br><br>
+  <!-- TESTING  -->
+  <h1 class="display-4" id="work-heading">Research Papers</h1>
+  <section id="research-paper-section">
+      <div class="row">
+        <div class="col-md-3">
+            <!-- Tabs nav -->
+            <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <!-- <i class="fa fa-user-circle-o mr-2"></i> -->
+                    <span class="font-weight-bold small text-uppercase">Abstract</span></a>
 
+                <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <!-- <i class="fa fa-calendar-minus-o mr-2"></i> -->
+                    <span class="font-weight-bold small text-uppercase">Read More</span></a>
+              </div>
+          </div>
+
+
+          <div class="col-md-9">
+            <!-- Tabs content -->
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <h4 class="font-italic mb-4">The Firefly Unit: A MANET based communication system using Zigbee and LoRaWAN protocols for IoT applications in Remote Locations</h4>
+                    <p class="font-italic text-muted text-small mb-2">We are massively reliant on communication systems such as radios, phones, etc., which fails to provide a reliant communication system for people to have a long-distance transmission of information from remote locations of difficult terrains and hilly regions. This paper addresses the existing and paralyzed long-distance communication system for the transmission of data for remote locations and proposes a communication system, based on the LoRaWAN and Zigbee protocols designed, developed, and tested on wireless sensor networks (WSN).</p>
+                </div>
+                
+                <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <h4 class="font-italic mb-4">The Firefly Unit: A MANET based communication system using Zigbee and LoRaWAN protocols for IoT applications in Remote Locations
+                    </h4>
+                    <a href="https://ieeexplore.ieee.org/document/9404591">Click to read the full reseacch paper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+    <!-- FOOTER -->
     <!-- Site footer -->
     <footer class="site-footer">
       <div class="container">
