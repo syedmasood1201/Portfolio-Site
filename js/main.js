@@ -1,18 +1,7 @@
-$(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-            $("#back-to-top").fadeIn();
-        } else {
-            $("#back-to-top").fadeOut();
-        }
-    });
-    // scroll body to 0px on click
-    $("#back-to-top").click(function() {
-        $("body,html").animate({
-                scrollTop: 0,
-            },
-            400
-        );
-        return false;
-    });
-});
+window.addEventListener('scroll',function(){
+    if(window.scrollY > 100) {
+        document.getElementById("nav-bar").style.backgroundColor="black"
+    } else if (window.scrollY < 50) {
+        document.getElementById("nav-bar").style.background="transparent"
+    }
+})

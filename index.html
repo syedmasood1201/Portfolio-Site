@@ -1,506 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed Masood I | Home</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Masood I| Home</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162752815-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-162752815-1');
-    </script>
-
-
-    <!-- css stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/style.css" />
-
-    <!-- bootstrap cdn -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Open+Sans:ital@0;1&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-
-    <!-- aos stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/aos.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!-- fontawsome  -->
     <script src="https://kit.fontawesome.com/551e46de4a.js" crossorigin="anonymous"></script>
-</head>
-<style>
-    .parallax {
-        /* The image used */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/wall.jpg);
-        height: 100vh;
-        width: 100%;
-        /* Set a specific height */
-        min-height: 500px;
-        /* Create the parallax scrolling effect */
-        /* background-attachment: fixed; */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-</style>
 
-<body>
-    <!-- Navbar  -->
-    <header class="header">
-        <div class="cursor"></div>
-        <div class="parallax">
-            <nav class="navbar navbar-expand-lg fixed-top py-3">
-                <div class="container">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo.png" />
-                        </a>
-                    </div>
-                    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto" id="current">
-                            <li class="nav-item active">
-                                <a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link text-uppercase font-weight-bold">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#skills" class="nav-link text-uppercase font-weight-bold">Skills</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a href="#projects" class="nav-link text-uppercase font-weight-bold">Projects</a>
-                            </li> -->
-                            <li class="nav-item">
-                                <a href="#blog" class="nav-link text-uppercase font-weight-bold">Blogs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#youtube" class="nav-link text-uppercase font-weight-bold">YouTube</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#faq" class="nav-link text-uppercase font-weight-bold">FAQ</a>
-                            </li>
-
-                            <!-- <li class="nav-item">
-                                <a href="#contact" class="nav-link text-uppercase font-weight-bold">Contact Me</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Navbar  -->
-            <!-- Into text  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top py-3" id="nav-bar">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/logo-light.png" alt="" />
+            </a>
+          </div>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto" id="current">
+              <li class="nav-item active">
+                <a href="#main-text" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#about-me" class="nav-link text-uppercase font-weight-bold">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link text-uppercase font-weight-bold">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#faq" class="nav-link text-uppercase font-weight-bold">History</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+      <div class="container" id="main-text">
+        <div class="container py-3">
+          <div class="row h-100 align-items-center py-5">
             <div class="container-text">
-                <h1>Hola! I'm Syed
-                    <span class="txt-type" data-wait="2000" data-words='[" an Entrepreneur", " a Tech Enthusiast", " a Developer", " and a Writer"]'></span>
-                </h1>
-                <h2><small>
-                        <center>Let's build a better future together.</center>
-                    </small>
-
-                </h2>
+              <h1>
+                Hola! I'm Syed a
+                <span class="txt-type" data-wait="2000" data-words='[" Developer", " Tech Enthusiast", " Entrepreneur", " and a Writer"]'></span>
+              </h1>
+              <h2>
+                <small>
+                  <center>Let's build a better future together.</center>
+                </small>
+              </h2>
             </div>
-            <br><br>
-            <section class="first-socials">
-                <button class="btn btn-linkedin btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.linkedin.com/in/syedmasood-i/'"><i
-                        class="fa fa-linkedin"></i></button>
-                <button class="btn btn-github btn-circle btn-circle-lg m-1" onclick="window.location.href='https://github.com/syedmasood1201'"><i
-                        class="fa fa-github"></i></button>
-                <button class="btn btn-instagram btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.instagram.com/officially_its_syed/'"><i
-                        class="fa fa-instagram"></i></button>
-                <button class="btn btn-facebook btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.facebook.com/profile.php?id=100008242115852'"><i
-                        class="fa fa-facebook"></i></button>
-                <!-- <button class="btn btn-twitter btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.facebook.com/profile.php?id=100008242115852'"><i class="fa fa-twitter"></i></button> -->
-                <button class="btn btn-youtube btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.youtube.com/channel/UC-xRLnyNVwsUubaPKXWuFmQ?view_as=subscriber'"><i
-                        class="fa fa-youtube"></i></button>
+            <section class="first-socials" id="main-social-icons">
+              <button class="btn btn-linkedin btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.linkedin.com/in/syedmasood-i/'" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </button>
+              <button class="btn btn-github btn-circle btn-circle-lg m-1" onclick="window.location.href='https://github.com/psied'">
+                <i class="fa fa-github"></i>
+              </button>
+              <button class="btn btn-instagram btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.instagram.com/officially_its_syed/'">
+                <i class="fa fa-instagram"></i>
+              </button>
+              <button class="btn btn-twitter btn-circle btn-circle-lg m-1" onclick="window.location.href='https://www.youtube.com/channel/UC-xRLnyNVwsUubaPKXWuFmQ?view_as=subscriber'">
+                <i class="fa fa-twitter"></i>
+              </button>
             </section>
-            <br>
-
-
-            <!-- scroll css animation  -->
-            <div class="scroll">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="col-lg-6 d-lg-block" id="main-image">
+              <img src="assets/Innovation-amico.svg" alt="" class="img-fluid" />
             </div>
+          </div>
         </div>
+        <div class="scroll">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
-
-    <!-- about me section  -->
-    <div class="bg" id="about">
-        <div class="container py-5">
-            <div class="row h-100 align-items-center py-5">
-                <div class="col-lg-6">
-                    <h1 class="display-4">About Me</h1>
-                    <br>
-                    <p class="lead text-muted mb-0">
-                        I am Syed, a 20 year old entrepreneur and a tech enthusiast. Impressed by science and technology, I always had a magical bond with computers and technology. I believe in the fact that 
-                        "Curiosity is the essence of our existence" so I constantly learn everything that is interesting and intriguing. 
-                        I always dreamt of becoming an entrepreneur, I never believed the conventional education imparted at schools. Space, 
-                        the stars and the planets have always inspired me, reminded me that there are a lot of things beyond the green world which we live in, so I ventured and co-founded Starlax Aerospace 
-                        to get me and others closer to the things which inspired me.  
-                    </p>
-                    <p class="lead text-muted">
-                        <a href="#" class="text-muted"> <u></u></a>
-                    </p>
-                </div>
-                <div class="col-lg-6 d-lg-block">
-                    <img src="img/me.png" alt="" class="img-fluid" />
-                </div>
-            </div>
+    <div class="container" id="about-me">
+      <div class="container py-3">
+        <div class="row h-100 align-items-center py-5">
+          <div class="col-lg-6">
+            <img src="assets/Code typing-amico.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-lg-6 d-lg-block">
+            <h1 class="display-4">About Me</h1>
+            <p class="lead mb-0">
+              I'm Syed (aka Psied), a 21 year old developer and a tech enthusiast. Impressed by science and technology, I always had a magical bond with computers and technology. I believe in the fact that "Curiosity is the essence of human
+              existence". I believe in the fact that "Curiosity is the essence of human existence", so I constantly learn everything that is interesting and intriguing.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-
-
-    <!-- skills section  -->
-    <div class="bg" id="skills">
-        <div class="container skills-section py-5" id="skills">
-            <!-- My compnay  -->
-            <div class="banner-breadcum section" id="youtube">
-                <div class="row">
-                    <div class="breadcrumb-image" style="background-image: url(img/StarlaxBlack.png);">
-                        <div class="container text-center">
-                            <!-- <h1>Starlax Aerospace</h1> -->
-                            <div class="breadcrumbs_path mt-4">
-                                <a href="#"></a>
-                                <a href="https://www.starlax.co/" target="_blank" class="btn btn-facebook px-4 py-2.5 rounded-pill shadow-sm">&nbsp; Visit Website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
+    <div class="skills-section" id="skills">
+      <h1 class="display-4">Skills</h1>
+      <br />
+      <div class="row pb-5 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card rounded shadow-sm border-0 electronics-card">
+            <div class="card-body p-4">
+              <img src="assets/electronics.svg" alt="" class="img-fluid d-block mx-auto mb-3" />
+              <h2 class="h5"><code>Electronics</code></h2>
+              <p class="text-muted">Circuit Designing | Prototyping</p>
             </div>
-            <div class="py-5">
-                <h1 class="display-4">Skills</h1>
-                <!-- <h3 class="font-weight-bold mb-0">Demo 4</h3> -->
-                <br><br><br>
-                <div class="row">
-                    <!-- Skill item -->
-                    <div class="col-lg-6 mb-3 mb-lg-0">
-                        <div class="hover hover-4 text-white rounded"><img src="img/skill1.jpg" alt="">
-                            <div class="hover-overlay"></div>
-                            <div class="hover-4-content">
-                                <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Electronics</span></h3>
-                                <p class="hover-4-description text-uppercase mb-0 small">Arduino <br> Microcontrollers
-                                    <br>Internet of Things (IoT) <br>Prototyping </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- skill item -->
-                    <div class="col-lg-6">
-                        <div class="hover hover-4 text-white rounded"><img src="img/skill2.jpg" alt="">
-                            <div class="hover-overlay"></div>
-                            <div class="hover-4-content">
-                                <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Development</span></h3>
-                                <p class="hover-4-description text-uppercase mb-0 small">HTML <br> CSS <br> Materialize CSS <br>Bootstrap <br>Javascript <br>Swift <br> Python</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="py-5">
-                <div class="row">
-                    <!-- skill item -->
-                    <div class="col-lg-6 mb-3 mb-lg-0">
-                        <div class="hover hover-4 text-white rounded"><img src="img/skill3.jpg" alt="">
-                            <div class="hover-overlay"></div>
-                            <div class="hover-4-content">
-                                <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Tools and technologies</span></h3>
-                                <p class="hover-4-description text-uppercase mb-0 small">Linux <br> SQL <br> MongoDB
-                                    <br> Node.js <br> Final Cut Pro <br> iMovie <br> User Interface Design </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- skill item -->
-                    <div class="col-lg-6">
-                        <div class="hover hover-4 text-white rounded"><img src="img/skill4.jpg" alt="">
-                            <div class="hover-overlay"></div>
-                            <div class="hover-4-content">
-                                <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Interpersonal Skills</span></h3>
-                                <p class="hover-4-description text-uppercase mb-0 small">Public Speaking <br> Team Leadership <br>Creative Problem Solving <br>Team Management <br> Creative Writing
-                                    <br>Motivational Speaking</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="banner-breadcum section" id="blog">
-                <div class="row">
-                    <div class="breadcrumb-image" style="background-image: url(img/blogsnip.jpg);">
-                        <div class="container text-center">
-                            <h1>My Blogs</h1>
-                            <br>
-                            <div class="breadcrumbs_path">
-                                <a class="btn btn-dark" href="blog.html" role="button">Let's check it out</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-            </div>
-            <br>
-            <!-- youtube section  -->
-            <div class="banner-breadcum section" id="youtube">
-                <div class="row">
-                    <div class="breadcrumb-image" style="background-image: url(img/yt.jpg);">
-                        <div class="container text-center">
-                            <h1>YouTube channel</h1>
-                            <div class="breadcrumbs_path mt-4">
-                                <a href="#"></a>
-                                <a href="https://www.youtube.com/channel/UC-xRLnyNVwsUubaPKXWuFmQ?view_as=subscriber" target="_blank" class="btn btn-danger px-4 py-2.5 rounded-pill shadow-sm"><i
-                                        class="fab fa-youtube"></i>&nbsp; CLICK HERE FOR YOUTUBE CHANNEL</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-            </div>
-            <br>
-            <!-- faq section  -->
-            <div class="banner-breadcum section" id="faq">
-                <div class="row">
-                    <div class="breadcrumb-image" style="background-image: url(img/faq2.jpg);">
-                        <div class="container text-center">
-                            <h1>Frequently asked questions</h1>
-                            <div class="breadcrumbs_path">
-                                <a href="#"></a> FAQ's</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col-lg-9 mx-auto">
-                    <!-- Accordion -->
-                    <div id="accordionExample" class="accordion shadow">
-
-                        <!-- Accordion item 1 -->
-                        <div class="card">
-                            <div id="headingOne" class="card-header bg-black shadow-sm border-0">
-                                <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">Q:
-                                        What do I actually work with?</a></h6>
-                            </div>
-                            <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
-                                <div class="card-body p-5">
-                                    <p class="font-weight-light m-0">I basically work with almost everything. Electronics, web dev, ML, you name it. I might have have worked on it because i strongly believe that if you have the interest to do something you can do it, whatever it maybe
-                                        be and how hard it maybe.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accordion item 2 -->
-                        <div class="card">
-                            <div id="headingTwo" class="card-header bg-black shadow-sm border-0">
-                                <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">Q:
-                                        Am i a writer?</a></h6>
-                            </div>
-                            <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
-                                <div class="card-body p-5">
-                                    <p class="font-weight-light m-0">So I get this question frequently. I am an avid reader. I read a lots of books and I sarted writing a book which is currently in progress at a good phase. So I think I can call myself a writer.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Accordion item 3 -->
-                        <div class="card">
-                            <div id="headingThree" class="card-header bg-black shadow-sm border-0">
-                                <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">Q:
-                                        Are you actually from Mars?</a></h6>
-                            </div>
-                            <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
-                                <div class="card-body p-5">
-                                    <p class="font-weight-light m-0">Ohh I love when people ask me this question. The answer is maybe, who knows.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion item 4 -->
-                        <div class="card">
-                            <div id="headingFour" class="card-header bg-black shadow-sm border-0">
-                                <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">Q:
-                                        How am I so energetic all the time?</a></h6>
-                            </div>
-                            <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample" class="collapse">
-                                <div class="card-body p-5">
-                                    <p class="font-weight-light m-0">This is a question which people ask me a lot. So i basically like working on something which interests me. So usually when people do something which interests them they usually don't get bored. So i guess i do things
-                                        which intersts me and makes a keep going.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <br><br>
-
-            <!-- <div class="yt-container mb-5">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kIdS6214PQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-lg-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0557zMvLOio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-
-                </div>
-            </div> -->
-            <!-- Contact me section  -->
-            <!-- <div class="banner-breadcum section" id="contact">
-                <div class="row">
-                    <div class="breadcrumb-image" style="background-image: url(img/contact.jpg);">
-                        <div class="container text-center">
-                            <h1>Contact me</h1>
-                            <div class="breadcrumbs_path">
-                                <a href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-            </div> -->
-
+          </div>
         </div>
-
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card rounded shadow-sm border-0 electronics-card">
+            <div class="card-body p-4">
+              <img src="assets/IoT.svg" alt="" class="img-fluid d-block mx-auto mb-3" />
+              <h2 class="h5"><code>Internet Of Things</code></h2>
+              <p class="text-muted">Arduino | ESP8266 | ESP32 | LoRa | Mesh Networks</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card rounded shadow-sm border-0 electronics-card">
+            <div class="card-body p-4">
+              <img src="assets/developer.svg" alt="" class="img-fluid d-block mx-auto mb-3" />
+              <h2 class="h5"><code>Development</code></h2>
+              <p class="text-muted">HTML | CSS | JavaScript | Python | React | Node.js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-5 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card rounded shadow-sm border-0 electronics-card">
+            <div class="card-body p-4">
+              <img src="assets/tools.svg" alt="" class="img-fluid d-block mx-auto mb-3" />
+              <h2 class="h5"><code>Tools and Technology</code></h2>
+              <p class="text-muted">Linux | Visual Studio Code | Arduino IDE | XCode | Git | Figma</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card rounded shadow-sm border-0 electronics-card">
+            <div class="card-body p-4">
+              <img src="assets/interpersonal.svg" alt="" class="img-fluid d-block mx-auto mb-3" />
+              <h2 class="h5"><code>Interpersonal</code></h2>
+              <p class="text-muted">Team Leadership | Team Management | Problem Solving | Business Development | Product Management | Product Development</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card rounded shadow-sm border-0 electronics-card">
+            <div class="card-body p-4">
+              <img src="assets/hobby.svg" alt="" class="img-fluid d-block mx-auto mb-3" />
+              <h2 class="h5"><code>Hobbyist-ic Skills</code></h2>
+              <p class="text-muted">Propulsion Systems | Ethichal Hacking | UI/UX Desing | Blockchain | EV Design | App Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-    </div>
-    <!-- Form with header -->
-
-    </section>
-    <!-- Section: Contact v.3 -->
-
-
-
-
-
-    </div>
-    </div>
-    <!-- Contact me section  -->
-    <!-- ////////////footer///////////////////// -->
+    <!-- FOOTER -->
 
     <!-- Site footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-md-6">
-                    <h6>Powered By:</h6>
-                    <a href="index.html" target="_blank"> <img STYLE=" WIDTH:300px; height: 100px;" src="img/logo.png" alt=""></a>
-                    <a href="#" target="_blank">
-                        <IMG STYLE="position:relative; top: inherit; WIDTH:120px; HEIGHT:120px" SRC="img/logo2f.png">
-                    </a>
+      <div class="container">
+          <div class="row">
+              <div class="col-6 col-md-6">
+                  <h6>Powered By:</h6>
+                  <a href='/' target='_blank'> <img STYLE=" WIDTH:300px; height: 100px;" src="https://d33wubrfki0l68.cloudfront.net/90ab5e95ad36dc1948c0effbd5e97b0ebb6790d1/03e77/img/logo.png" alt=""></a>
+                  <!-- <a href="#" target="_blank">
+                      <IMG STYLE="position:relative; top: inherit; WIDTH:120px; HEIGHT:120px" SRC="https://d33wubrfki0l68.cloudfront.net/131cf7521275540e70c62fa7c9126c8a40fd31f2/f3a80/img/logo2f.png">
+                  </a> -->
+              </div>
+              <div class="col-xs-6 col-md-2">
+              </div>
+              <div class="col-xs-12 col-md-3">
+                  <h6>Quick Links</h6>
+                  <ul class="footer-links">
+                      <li><a href='/'>Home</a></li>
+                      <li><a href='/#about'>About</a></li>
+                      <li><a href='/#skills'>Skills</a></li>
+                      <!-- <li><a href='/#blog'>Blogs</a></li> -->
+                      <!-- <li><a href='/#faq'>FAQ</a></li> -->
+                      <li><a href="mailto:contact@syedsays.in" target="_blank">Contact Me</a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                  <p class="copyright-text">
+                      Designed by
+                      <b><a href='/' target='_blank'>Syed Masood I</a></b>.
+                  </p>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="social-icons">
+                      <li><a class="linkedin" href="https://www.linkedin.com/in/syedmasood-i/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a class="youtube" href="mailto:contact@syedsays.in" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                      <li><a class="github" href="https://github.com/psied" target="_blank"><i
+                                  class="fa fa-github"></i></a></li>
+                      <li><a class="instagram" href="https://www.instagram.com/officially_its_syed/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                      <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100008242115852" target="_blank"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <!-- <li><a class="twitter" href="https://twitter.com/thencryptor" target="_blank"><i
+                                  class="fa fa-twitter"></i></a>
+                      </li> -->
+                      <li><a class="youtube" href="https://www.youtube.com/channel/UC-xRLnyNVwsUubaPKXWuFmQ?view_as=subscriber" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+              </div>
+  </footer>
+    <!-- </div> -->
+    <!-- </div> -->
 
-
-                </div>
-
-
-
-
-                <div class="col-xs-6 col-md-2">
-
-                </div>
-
-
-                <div class="col-xs-12 col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#skills">Skills</a></li>
-                        <li><a href="index.html#blog">Blogs</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                        <li><a href="mailto:contact@syedsays.in" target="_blank">Contact Me</a></li>
-
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">
-                        Designed by
-                        <b><a href="index.html" target="_blank">Syed Masood I</a></b>.
-                    </p>
-
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="linkedin" href="https://www.linkedin.com/in/syedmasood-i/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a class="youtube" href="mailto:contact@syedsays.in" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                        <li><a class="github" href="https://github.com/syedmasood1201" target="_blank"><i
-                                    class="fa fa-github"></i></a></li>
-                        <li><a class="instagram" href="https://www.instagram.com/officially_its_syed/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100008242115852" target="_blank"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a class="twitter" href="https://twitter.com/thencryptor" target="_blank"><i
-                                    class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a class="youtube" href="https://www.youtube.com/channel/UC-xRLnyNVwsUubaPKXWuFmQ?view_as=subscriber" target="_blank"><i class="fa fa-youtube"></i></a></li>
-
-
-                    </ul>
-                </div>
-    </footer>
-
-
-    <!-- back to top button -->
-    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-
-
-    <!-- genral scripts  -->
     <script src="js/main.js"></script>
-
-    <!-- skills script  -->
-    <script src="js/skills.js"></script>
-
-    <!-- navbar scripts -->
-    <script src="js/nav.js"></script>
-
-    <!-- typewriter scripts  -->
     <script src="js/text.js"></script>
-
-    <!-- aos animation assets  -->
-    <script>
-        AOS.init({
-            Duration: 5000,
-        });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="assets/aos.js"></script>
-
-    <!-- bootstrap scripts  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-
-</body>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  </body>
 </html>
